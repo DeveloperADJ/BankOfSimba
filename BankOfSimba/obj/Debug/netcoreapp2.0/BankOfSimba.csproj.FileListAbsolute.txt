@@ -1,0 +1,11 @@
+C:\Users\Arno\Desktop\DeveloperADJ\week-07\day-3\BankOfSimba\BankOfSimba\bin\Debug\netcoreapp2.0\BankOfSimba.deps.json
+C:\Users\Arno\Desktop\DeveloperADJ\week-07\day-3\BankOfSimba\BankOfSimba\bin\Debug\netcoreapp2.0\BankOfSimba.runtimeconfig.json
+C:\Users\Arno\Desktop\DeveloperADJ\week-07\day-3\BankOfSimba\BankOfSimba\bin\Debug\netcoreapp2.0\BankOfSimba.runtimeconfig.dev.json
+C:\Users\Arno\Desktop\DeveloperADJ\week-07\day-3\BankOfSimba\BankOfSimba\bin\Debug\netcoreapp2.0\BankOfSimba.dll
+C:\Users\Arno\Desktop\DeveloperADJ\week-07\day-3\BankOfSimba\BankOfSimba\bin\Debug\netcoreapp2.0\BankOfSimba.pdb
+C:\Users\Arno\Desktop\DeveloperADJ\week-07\day-3\BankOfSimba\BankOfSimba\obj\Debug\netcoreapp2.0\BankOfSimba.csproj.CoreCompileInputs.cache
+C:\Users\Arno\Desktop\DeveloperADJ\week-07\day-3\BankOfSimba\BankOfSimba\obj\Debug\netcoreapp2.0\BankOfSimba.AssemblyInfoInputs.cache
+C:\Users\Arno\Desktop\DeveloperADJ\week-07\day-3\BankOfSimba\BankOfSimba\obj\Debug\netcoreapp2.0\BankOfSimba.AssemblyInfo.cs
+C:\Users\Arno\Desktop\DeveloperADJ\week-07\day-3\BankOfSimba\BankOfSimba\obj\Debug\netcoreapp2.0\BankOfSimba.dll
+C:\Users\Arno\Desktop\DeveloperADJ\week-07\day-3\BankOfSimba\BankOfSimba\obj\Debug\netcoreapp2.0\BankOfSimba.pdb
+C:\Users\Arno\Desktop\DeveloperADJ\week-07\day-3\BankOfSimba\BankOfSimba\obj\Debug\netcoreapp2.0\BankOfSimba.csprojResolveAssemblyReference.cache

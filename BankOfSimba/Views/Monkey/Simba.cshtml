@@ -1,0 +1,84 @@
+﻿@model BankOfSimba.Models.BankAccounts
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Welcome to Simba's bank!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            text-align: center;
+            color: darkorange;
+        }
+
+        #add {
+            background-color: transparent;
+            color: darkorange;
+        }
+
+        td, img {
+            height: 100px;
+            width: 100px;
+        }
+
+        html {
+            background: url('http://4.bp.blogspot.com/_QdHn8FT7SdY/S-FZOJh0E5I/AAAAAAAAI1Y/gXm85yHPkhk/s1600/lionking1005sm.jpgno-repeat') no-repeat center center fixed;
+            background-size: cover;
+            color: black;
+        }
+
+        table {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Welcome to Simba's bank!</h1>
+    <table align="center">
+        <tr>
+            <th>Id:</th>
+            <th>Name:</th>
+            <th>Balance:</th>
+            <th>AnimalType: </th>
+            <th>Badguy: </th>
+            <th>King: </th>
+            <th>Photo: </th>
+        </tr>
+
+        @for (int i = 0; i < Model.animals.Count; i++)
+        {
+            var animal = Model.animals[i];
+            string borderStyle = animal.IsKing ? "4px darkorange dotted" : "2px black solid";
+            string textColor = animal.IsBadGuy ? "red" : "darkorange";
+
+            <tr>
+                <td style="border: @borderStyle; color: @textColor">@i</td>
+                <td style="border: @borderStyle; color: @textColor">@animal.Name</td>
+                <td style="border: @borderStyle; color: @textColor">@Double.Parse(animal.Balance).ToString("0.00")</td>
+                <td style="border: @borderStyle; color: @textColor">@animal.AnimalType</td>
+                <td style="border: @borderStyle; color: @textColor">@Convert.ToString(animal.IsBadGuy)</td>
+                <td style="border: @borderStyle; color: @textColor">@Convert.ToString(animal.IsKing)</td>
+                <td style="border: @borderStyle; color: @textColor"><img src="@animal.ImageURL" /></td>
+                <td>
+                    <form action="Simba?index=@i" method="post">
+                        <input type="submit" value="Add funds!" />
+                    </form>
+                </td>
+            </tr>
+        }
+    </table>
+    <form action="add" method="post">
+        <input id="add" type="text" name="name" value="Arno" /><br />
+        <input id="add" type="text" name="balance" value="2000" /><br />
+        <input id="add" type="text" name="animalType" value="Animal Type" /><br />
+        <input id="add" type="text" name="imageURL" value="https://i.pinimg.com/originals/e7/fa/fb/e7fafb0b1581a411b56d9edd2e4a6734.png" /><br />
+        <input id="add" type="text" name="isKing" value="true" /><br />
+        <input id="add" type="text" name="isBadGuy" value="true" /><br />
+        <input id="add" type="submit" value="Add Animal!" />
+    </form>
+</body>
+</html>
